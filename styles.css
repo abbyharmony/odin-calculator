@@ -1,0 +1,31 @@
+body {
+    background-color: aquamarine;
+    font-family: "Inter";
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.calculator {
+    border: solid;
+    border-radius: 4%;
+    height: 35rem;
+    width: 30rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.calc-item {
+    border: solid;
+    height: 5rem;
+    width: 5rem;
+}
