@@ -1,14 +1,16 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(110, 250, 175);
     font-family: "Inter";
 }
 
 h1 {
     text-align: center;
+    color: black;
 }
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;    
 }
@@ -16,16 +18,40 @@ main {
 .calculator {
     border: solid;
     border-radius: 4%;
-    height: 35rem;
-    width: 30rem;
+    box-shadow: 10px 10px 5px grey;
+    background-color: white;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
     align-content: space-evenly;
 }
 
+.display {
+    color: white;
+    background-color: black;
+    border: solid greenyellow;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+
 .calc-item {
     border: solid;
+    border-radius: 4%;
+    box-shadow: 10px 5px 5px black;
+    font-size: 2rem;
     height: 5rem;
-    width: 5rem;
+    width: 6rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc-item:hover {
+    background-color: rgb(227, 85, 243);
 }
