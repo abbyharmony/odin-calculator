@@ -1,31 +1,43 @@
 // Create functions to add, subtract, multiply and divide
 function add(a, b) {
-    console.log(a + b);
+    return a + b;
 }
 
 function subtract(a, b) {
-    console.log(b - a);
+    return b - a;
 }
 
 function multiply(a, b) {
-    console.log(a * b);
-  };
+    return a * b;
+}
 
 function divide(a, b) {
-    console.log(b / a);
-};
-
- add(1, 2);
- subtract(1, 2);
- multiply(1, 2);
- divide(1, 2);
+    if (b === 0) {
+        throw new Error("error");
+    }
+    return a / b;
+}
 
  let numA;
  let operator;
  let numB;
 
- function operate(a, b) {
-    multiply(a, b);
+ function operate(operator, numA, numB) {
+    switch(operator) {
+        case "+":
+            return add(numA, numB);
+        case "-":
+            return subtract(numA, numB);
+        case "*":
+            return multiply(numA, numB);
+        case "/":
+            return divide(numA, numB);
+        default:
+            throw new Error("error");
+    }
  };
 
- 
+ let addButton = document.getElementById("add");
+ addButton.addEventListener("click", () => {
+    add();
+ });
