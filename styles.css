@@ -39,7 +39,7 @@ main {
     padding-left: 1rem;
 }
 
-.calc-item {
+.calc-button {
     border: solid;
     border-radius: 4%;
     box-shadow: 10px 5px 5px black;
@@ -52,6 +52,6 @@ main {
     justify-content: center;
 }
 
-.calc-item:hover {
+.calc-button:hover {
     background-color: rgb(227, 85, 243);
 }
