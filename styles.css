@@ -26,7 +26,7 @@ main {
     align-content: space-evenly;
 }
 
-.display {
+#display {
     color: white;
     background-color: black;
     border: solid greenyellow;
